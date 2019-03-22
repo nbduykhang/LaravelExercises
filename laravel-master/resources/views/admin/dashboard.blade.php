@@ -10,11 +10,12 @@
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    DataTables Advanced Tables
+                                    Admin Panel
                                 </div>
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
-                                    <div class="table-responsive">
+                                	<center><img src="{{ URL::asset('img/multimanagement.jpg') }}" width="1000" height="400"></center>
+                                    <!--<div class="table-responsive">
                                         <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                             <thead>
                                                 <tr>
@@ -231,7 +232,7 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
+                                    </div>-->
                                     <!-- /.table-responsive -->
                                 </div>
                                 <!-- /.panel-body -->
