@@ -61,9 +61,13 @@
                                                         <td>{{ $listUser[$i]->updated_at }}</td>
                                                         <td>
                                                             <a href="{{ route('getShowUser',['id'=>$listUser[$i]->id]) }}" class="text-primary"><i class="fa fa-eye"></i></a>
-                                                            <a href="{{ route('getEditUser',['id'=>$listUser[$i]->id]) }}" class="text-warning"><i class="fa fa-edit"></i></a> 
+                                                            <a href="{{ route('getEditUser',['id'=>$listUser[$i]->id]) }}" class="text-warning"><i class="fa fa-edit"></i></a>
+                                                            @if(Auth::user()->id != $listUser[$i]->id)
                                                             <a href="{{ route('getDeleteUser',['id'=>$listUser[$i]->id]) }}" class="text-danger"><i class="fa fa-trash"></i></a>
                                                             <a href="{{ route('getDeactiveUser',['id'=>$listUser[$i]->id]) }}" class="text-danger"><i class="fa fa-power-off"></i></a>
+                                                            <!--<a href="" class="text-danger"><i class="fa fa-sign-in"></i></a>-->
+                                                            @endif
+
                                                         </td>
                                                     </tr>
                                                 @endfor

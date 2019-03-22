@@ -26,6 +26,8 @@ Route::post('/admin/customregister', 'CustomAuth\AuthController@postRegister')->
 Route::get('/admin/customlogin','CustomAuth\AuthController@getLogin')->name('getLogin');
 Route::post('/admin/customlogin','CustomAuth\AuthController@postLogin')->name('postLogin');
 
+/*Route::get('/admin/anotherlogin/{email}/{password}/{status}','CustomAuth\AuthController@getAnotherLogin')->name('getAnotherLogin');*/
+
 
 	
 Route::group(['prefix'=>'admin','middleware'=>'checkadmin'],function(){

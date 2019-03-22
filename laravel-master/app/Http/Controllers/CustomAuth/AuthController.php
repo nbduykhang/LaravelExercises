@@ -42,4 +42,17 @@ class AuthController extends Controller
     		return redirect()->back();
     	}
 	}
+
+	/*public function getAnotherLogin($email, $password, $status){
+		$data=[
+    		'email'=>$email,
+    		'password'=>$password,
+    		'status'=>$status
+    	];
+    	if(Auth::attempt($data)){
+    		return redirect()->route('getAdmin');
+    	} else {
+    		return redirect()->back();
+    	}
+	}*/
 }
